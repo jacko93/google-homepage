@@ -1,0 +1,180 @@
+body {
+  margin: 20px 20px 20px 20px;
+  font-family: arial, sans-serif;
+}
+
+.header {
+  position: relative;
+}
+
+.pagex {
+  position: relative;
+}
+input[name=searchbox] {
+  position: absolute;
+  top: 0px;
+  left: 140px;
+  width: 632px;
+  height: 39px;
+}
+
+input:focus, input:hover {
+  box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.3);
+  outline: none;
+  transition: 0.3s;
+}
+
+.login {
+  top: 10px;
+  background-color: #4285f4;
+  right: 20px;
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  padding: 8px 14px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.logo {
+  position: absolute;
+  top: 5px;
+  height: 44px;
+  width: 120px;
+}
+
+.menu {
+  position: absolute;
+  top: 60px;
+  left: 90px;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 2px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: grey;
+  font-size: 14px;
+  border-bottom: 3px solid #FFF;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.menu a:hover {
+  color: black;
+}
+
+.menu a:active, .menu a:focus {
+  color: #4285f4;
+  border-bottom: 3px solid #4285f4;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+hr {
+  position: absolute;
+  border: 0.01em solid rgb(254, 240, 240);
+  top: 105px;
+  width: 100%;
+}
+
+#results {
+  position: absolute;
+  top: 125px;
+  left: 150px;
+  color: grey;
+  font-size: 11px;
+}
+
+#privacy {
+  top: 155px;
+  left: 130px;
+  position: absolute;
+  border: 0.04em solid rgb(254, 240, 240);
+  width: 500px;
+  padding-left: 80px;
+}
+
+#privacy ul {
+  margin-left: -40px;
+  margin-bottom: 40px;
+}
+
+#privacy img {
+  margin-left: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#privacy li {
+  display: inline-block;
+}
+
+#privacy p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.noblock {
+  color: #4285f4;
+  text-transform: uppercase;
+}
+
+.block {
+  color: white;
+  background-color:#4285f4;
+  padding: 11px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.noblock, .block {
+  font-size: 14px;
+}
+
+#pages {
+  position: absolute;
+  top: 300px;
+  left: 150px;
+}
+
+#pages:not (:first-child) {
+  margin-top: 45px;
+}
+
+.page-url {
+  color: green;
+  font-size: 11px;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+
+.page-content{
+  font-size: 14px;
+  color: grey;
+}
+
+td a{
+  margin-right: 35px;
+  font-weight: bold;
+}
+
+.pagination-ul li {
+  display: inline-block;
+}
+
+.o {
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  border: 4px solid orange;
+  background-color: white;
+}
