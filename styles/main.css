@@ -1,5 +1,6 @@
 body {
-  margin: 20px 20px 20px 20px;
+  margin: 0;
+  padding: 0;
   font-family: arial, sans-serif;
 }
 
@@ -7,9 +8,10 @@ body {
   position: relative;
 }
 
-.pagex {
-  position: relative;
+.page-wrapper {
+  margin: 20px 20px 20px 20px;
 }
+
 input[name=searchbox] {
   position: absolute;
   top: 0px;
@@ -38,16 +40,13 @@ input:focus, input:hover {
 }
 
 .logo {
-  position: absolute;
   top: 5px;
   height: 44px;
   width: 120px;
 }
 
 .menu {
-  position: absolute;
-  top: 60px;
-  left: 90px;
+  margin-left: 90px;
 }
 
 .menu li {
@@ -79,24 +78,22 @@ input:focus, input:hover {
 }
 
 hr {
-  position: absolute;
+
   border: 0.01em solid rgb(254, 240, 240);
   top: 105px;
-  width: 100%;
 }
 
 #results {
-  position: absolute;
-  top: 125px;
-  left: 150px;
+  margin-left: 140px;
   color: grey;
   font-size: 11px;
 }
 
 #privacy {
-  top: 155px;
-  left: 130px;
-  position: absolute;
+  position: relative;
+  left: 100px;
+  top: 20px;
+  margin-bottom: 40px;
   border: 0.04em solid rgb(254, 240, 240);
   width: 500px;
   padding-left: 80px;
@@ -141,35 +138,58 @@ hr {
 }
 
 #pages {
-  position: absolute;
+  margin-left: 140px;
   top: 300px;
   left: 150px;
+  width: 600px;
 }
 
 #pages:not (:first-child) {
   margin-top: 45px;
 }
 
+.page-link {
+  font-size: 18px;
+}
+
+.page-link a {
+  text-decoration: none;
+  color: blue;
+}
+
+.page-link a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
 .page-url {
   color: green;
-  font-size: 11px;
-  margin-top: -15px;
-  margin-bottom: -15px;
+  font-size: 14px;
+  margin-top: -18px;
+  margin-bottom: -14px;
 }
 
 .page-content{
   font-size: 14px;
-  color: grey;
+  color: #545454;
+  line-height: 18px;
 }
 
 td a{
   margin-right: 35px;
   font-weight: bold;
+  text-decoration: none;
+  color: blue;
+}
+
+td a:hover {
+  text-decoration: underline;
 }
 
 .pagination {
   margin-top: 70px;
   margin-left: 70px;
+  position: relative;
 }
 
 .pagination-ul li {
@@ -201,13 +221,13 @@ td a{
   width: 11px;
   display: block;
   bottom: 19px;
-  position: relative;
+
 }
 
 .oa p {
   font-size: 13px;
-  position: relative;
   top: 5px;
+  position: relative;
 }
 
 .g, .g2 {
@@ -227,8 +247,33 @@ td a{
 }
 
 .g2, .g, .l, .e {
-  position: relative;
   font-family: Futura;
   font-weight: bold;
   font-size: 35px;
+}
+
+#footer {
+  position: relative;
+  height: 90px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  color: grey;
+}
+
+.footer ul {
+  margin-left: 80px;
+}
+
+.footer li {
+  display: inline-block;
+  margin-left: 20px;
+
+}
+
+.footer p {
+  margin-left: 140px;
+  top: 80px;
 }
